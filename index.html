@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sai Subhashree — Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Header: no left title per request -->
+  <header aria-label="Main header">
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <!-- <li><a class="nav-link" href="#about">About</a></li> -->
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="controls" role="region" aria-label="Header controls">
+      <a class="btn-cv" href="Project/cv.pdf" download>Download CV</a>
+      <div class="dark-toggle" id="darkToggle" title="Toggle dark mode" aria-pressed="false">
+        <i class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+    <button id="navToggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero container" aria-labelledby="home-heading">
+      <img class="photo" src="photo.jpg" alt="Sai Subhashree - photo" />
+      <h1 id="home-heading">Sai Subhashree</h1>
+      <div class="subtitle">•Data Analytics •Data Cleaning •Data Visualization</div>
+
+      <div class="icons" aria-hidden="true">
+        <i class="fa-solid fa-chart-line" title="statistics"></i>
+        <i class="fa-solid fa-chart-bar" title="bar chart"></i>
+        <i class="fa-solid fa-chart-pie" title="pie chart"></i>
+      </div>
+
+      <p>
+        Empowering informed decision-making through data-driven insights, I specialize in extracting,
+        transforming, and reporting complex data from diverse sources. With expertise in SQL, Python, Excel,
+        and Power BI, I craft custom reports, charts, and interactive dashboards that distill data into actionable
+        intelligence.
+        Proficient in data manipulation and visualization, I uncover hidden patterns and trends, illuminating paths to
+        business growth and optimization.
+      </p>
+
+      <div class="hero-actions">
+        <a class="small-btn" href="https://www.linkedin.com/in/sai-subhashree-14681520b/" target="_blank"
+          rel="noopener">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a class="small-btn" href="https://github.com/Saidalal" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a class="small-btn" href="Project/cv.pdf" download>
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <div class="skill-list" role="list">
+        <div class="skill" role="listitem"><i class="fa-solid fa-database"></i> SQL</div>
+        <div class="skill" role="listitem"><i class="fa-solid fa-chart-column"></i> Power BI</div>
+        <div class="skill" role="listitem"><i class="fa-brands fa-python"></i> Python</div>
+        <div class="skill" role="listitem"><i class="fa-regular fa-file-excel"></i> Excel</div>
+        <div class="skill" role="listitem"> <i class="fa-solid fa-chart-pie"></i> Tableau </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <div class="project-grid">
+        <!-- Card 1 -->
+        <article class="card" aria-labelledby="p1-title">
+          <img class="thumb" src="Project/Project1.png" alt=" Weather Dashboard" />
+          <div class="card-body">
+            <h3 id="p1-title"> Weather Dashboard </h3>
+            <p>A visually appealing weather analytics dashboard built using Power BI.
+              It provides current weather conditions and forecast insights such as temperature trends, rain chances, air
+              quality, humidity, and more.</p>
+            <div class="tech">Power BI • API</div>
+            <div class="links">
+              <a class="small-btn" href="https://github.com/Saidalal/POWER-BI/tree/main/Weather%20Dashboard"
+                target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> View Project
+              </a>
+            </div>
+          </div>
+          <div class="overlay" aria-hidden="true">
+            <a href="https://github.com/Saidalal/POWER-BI/tree/main/Weather%20Dashboard" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+
+        <article class="card" aria-labelledby="p4-title">
+          <img class="thumb" src="Project/Project4.png" alt="Zepto Inventory" />
+          <div class="card-body">
+            <h3 id="p4-title">Zepto E-commerce</h3>
+            <p>A real-world Data Analyst Portfolio Project based on an
+              e-commerce inventory dataset from Zepto which demonstrates
+              end-to-end SQL workflows,from raw data exploration to deriving business-focused insights.</p>
+            <div class="tech"> • SQL</div>
+            <div class="links">
+              <a class="small-btn" href="https://github.com/Saidalal/SQL/tree/main/Zepto%20Inventory" target="_blank" rel="noopener"><i
+                  class="fa-brands fa-github"></i> View Project</a>
+            </div>
+          </div>
+          <div class="overlay"><a href="https://github.com/Saidalal/SQL/tree/main/Zepto%20Inventory" target="_blank" rel="noopener"><i
+                class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" aria-labelledby="p3-title">
+          <img class="thumb" src="Project/Project3.jpg" alt="Finance Insights" />
+          <div class="card-body">
+            <h3 id="p3-title"> Finance Insights</h3>
+            <p>The dashboard has three headers: Revenue, Location, and Details. The Revenue page shows key financial
+              charts,
+              the Location page highlights geographical performance, and the Details page provides deeper analysis.</p>
+            <div class="tech">Power BI • Excel</div>
+            <div class="links">
+              <a class="small-btn" href="https://github.com/Saidalal/POWER-BI/tree/main/Finance%20Dashboard"
+                target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> View Project
+              </a>
+            </div>
+          </div>
+          <div class="overlay"><a href="https://github.com/Saidalal/POWER-BI/tree/main/Finance%20Dashboard"
+              target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" aria-labelledby="p2-title">
+          <img class="thumb" src="Project/Project2.png" alt="School Management Dashboard" />
+          <div class="card-body">
+            <h3 id="p2-title">School Management Dashboard </h3>
+            <p>An interactive Dashboard built entirely in Microsoft Excel.
+              This project visualizes school data for Students, Teachers, Departments, Projects, and Results in a
+              professional, easy-to-navigate format with a sidebar menu.</p>
+            <div class="tech">Excel • Power Query</div>
+            <div class="links">
+              <a class="small-btn" href="https://github.com/Saidalal/EXCEL/tree/main/SCHOOL%20MANAGEMENT"
+                target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Project</a>
+            </div>
+          </div>
+          <div class="overlay"><a href="https://github.com/Saidalal/EXCEL/tree/main/SCHOOL%20MANAGEMENT" target="_blank"
+              rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card" aria-labelledby="p5-title">
+          <img class="thumb" src="Project/Project5.png" alt="Telecom churn Analysis" />
+          <div class="card-body">
+            <h3 id="p5-title">Telecom churn Analysis</h3>
+            <p>This project explores a telecom company’s customer dataset using EDA to identify patterns in churn
+              behavior, understand influencing factors, and recommend strategies to improve customer retention.</p>
+            <div class="tech">Python • EDA • Pandas</div>
+            <div class="links">
+              <a class="small-btn" href="https://github.com/Saidalal/Python/tree/main/Telecom%20customer%20churn"
+                target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Project</a>
+            </div>
+          </div>
+          <div class="overlay"><a href="https://github.com/Saidalal/Python/tree/main/Telecom%20customer%20churn"
+              target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card" aria-labelledby="p6-title">
+          <img class="thumb" src="Project/Project6.png" alt=">Blikit Analysis" />
+          <div class="card-body">
+            <h3 id="p6-title">Blikit Analysis</h3>
+            <p>The Blikit Project is a comprehensive data analysis workflow using SQL for data querying, Excel for data
+              cleaning, Python for in-depth analysis, and Tableau for a final interactive dashboard.</p>
+            <div class="tech">Power BI • Tableau • Storytelling</div>
+            <div class="links">
+              <a class="small-btn" href="#" onclick="alert('Coming Soon!'); return false;"><i
+                  class="fa-brands fa-github"></i> View Project</a>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" onclick="alert('Coming Soon!'); return false;"><i class="fa-brands fa-github"></i> View on
+              GitHub</a>
+          </div>
+        </article>
+
+      </div> <!-- /project-grid -->
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+
+      <div class="contact-wrap">
+
+        <form name="Contact_Response" id="contact-form" aria-label="Contact form">
+          <input type="text" name="Name" placeholder="Your name" required />
+          <input type="email" name="Email" placeholder="Your email" required />
+          <input type="tel" name="Phone" placeholder="Phone number" />
+          <textarea name="Message" placeholder="Your Message" required></textarea>
+
+          <div class="submit-row">
+            <button type="submit">Send Message</button>
+            <a class="mail" href="mailto:sai.datasolutions25@gmail.com">Email Me</a>
+          </div>
+          <div id="form-status" aria-live="polite" style="color:var(--text); font-size:0.95rem;"></div>
+        </form>
+
+        <div id="response-modal" class="modal-overlay">
+          <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <p id="modal-status"></p>
+            <button class="ok-button" onclick="closeModal()">Okay</button>
+          </div>
+        </div>
+        <!-- Right panel: quick details -->
+        <aside
+          style="background:var(--card); padding:18px; border-radius:12px; box-shadow:0 12px 30px rgba(2,6,23,0.05);">
+          <h3 style="margin-bottom:8px">Get in touch</h3>
+          <p style="color:var(--muted); margin-bottom:12px;">Prefer email? Click <strong>Mail Me</strong> or use the
+            form. I usually reply within 1–2 business days.</p>
+
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Sai Subhashree — All rights reserved. | sai.datasolutions25@gmail.com| <br>
+       Thanks for visiting! Let’s create something amazing together.
+
+    </footer>
+  </main>
+
+  <!-- ---------- Scripts ---------- -->
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
